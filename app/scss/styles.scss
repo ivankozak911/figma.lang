@@ -1,8 +1,24 @@
 @import "./test/test.scss";
 
-$color: rgb(150, 10, 10); 
 
-body {
-    background-color: $color;
+
+$color: rgb(136, 61, 61); 
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    font-weight: 700;
+    src: url("../fonts/PTN77F.ttf");
 }
 
+@font-face {
+    font-family: 'PT Sans Narrow';
+    font-weight: 400;
+    src: url("../fonts/PTN57F.ttf");
+
+}
+
+* {
+    background-color: $color;
+    font-family: 'PT Sans Narrow';
+    font-weight: 400;
+}
