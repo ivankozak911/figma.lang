@@ -12,6 +12,47 @@ h1 {
   src: url("../fonts/PTN57F.ttf"); }
 
 * {
-  background-color: #883d3d;
+  box-sizing: border-box; }
+
+body {
   font-family: 'PT Sans Narrow';
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  height: 930px;
+  color: #fff;
+  background-image: url("../img/Rectangle 9.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1210px;
+  height: 156px;
+  background-image: url("../img/dark.png");
+  background-repeat: no-repeat;
+  background-size: 168px 31px;
+  background-position: center; }
+  .navigation .navigation__list {
+    display: flex;
+    margin: 0px;
+    padding-left: 19px; }
+    .navigation .navigation__list li {
+      font-size: 15px;
+      display: inline;
+      padding: 10px; }
+  .navigation .navigation__logo {
+    width: 168px;
+    height: 32px; }
+  .navigation .navigation__social {
+    display: flex; }
+    .navigation .navigation__social li a {
+      font-size: 0px;
+      display: inline;
+      padding: 10px; }
