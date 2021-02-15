@@ -123,3 +123,64 @@ header {
     left: 50%;
     transform: translate(-50%, 0 );
 }
+
+.features {
+    padding-top: 115px;
+    padding-bottom: 60px;
+
+    .features__title {
+        margin: 0px;
+        font-size: 48px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .features__subtitle {
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 400px;
+    }
+}
+
+.aside-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 869px;
+    margin: 0 auto;
+    
+
+    .aside-list__section {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        svg {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0 );
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            margin: 0 auto;
+            margin-top: 20px;
+            max-width: 200px;
+            text-align: center;
+
+            &:nth-child(2) {
+                margin-top: 0px;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin: 0px;
+            margin-top: 20px;
+            max-width: 200px;
+        }
+    }
+}
