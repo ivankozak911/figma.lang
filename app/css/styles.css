@@ -82,7 +82,7 @@ header {
   margin: 0 auto;
   margin-top: 50px;
   line-height: 40px;
-  width: 550px; }
+  max-width: 550px; }
 
 .header__subscribe {
   display: inline-block;
