@@ -175,3 +175,40 @@ header {
       color: #fff;
       position: absolute;
       bottom: 10px; }
+
+.partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .partners .partners__title {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0px; }
+  .partners .partners__subtitle {
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+    max-width: 400px;
+    margin: 0px;
+    margin-top: 15px; }
+  .partners .partners__row {
+    display: flex;
+    align-items: center; }
+    .partners .partners__row div img {
+      max-width: 100%;
+      max-height: 100%; }
+  .partners .partners__try {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #2091F9;
+    color: #fff;
+    margin-top: 80px;
+    padding-top: 16px;
+    width: 236px;
+    height: 60px;
+    border-radius: 50px; }
