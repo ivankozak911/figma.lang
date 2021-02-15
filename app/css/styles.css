@@ -147,7 +147,8 @@ header {
   max-width: 1243px;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
   .fastest .fastest__left {
     max-width: 400px;
     height: auto;
