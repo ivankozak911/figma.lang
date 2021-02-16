@@ -192,7 +192,8 @@ header {
     line-height: 40px;
     max-width: 400px;
     margin: 0px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 80px; }
   .partners .partners__row {
     display: flex;
     align-items: center; }
@@ -212,3 +213,61 @@ header {
     width: 236px;
     height: 60px;
     border-radius: 50px; }
+
+.respond {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .respond .respond__title {
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 400; }
+  .respond .respond__logo {
+    width: 150px;
+    height: 60px;
+    margin-top: 80px;
+    margin-bottom: 50px; }
+  .respond .respond__subtitle {
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0px;
+    max-width: 720px;
+    text-align: center; }
+  .respond .respond__list {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #2091F9;
+    color: #fff;
+    margin-top: 80px;
+    padding-top: 16px;
+    width: 276px;
+    height: 60px;
+    border-radius: 50px; }
+
+.responder {
+  width: 186px;
+  height: 55px;
+  margin-top: 50px;
+  padding-left: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative; }
+  .responder p {
+    margin: 0px;
+    font-size: 16px; }
+  .responder span {
+    font-size: 15px; }
+  .responder::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    background-image: url("../img/avatar.png");
+    background-position: center; }
