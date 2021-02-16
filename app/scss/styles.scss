@@ -625,9 +625,12 @@ header {
 .contact__cover {
     display: flex;
     justify-content: space-between;
+    
+    align-items: center;
     width: 100%;
     max-width: 1228px;
     height: 669px;
+
 
     .contact__form {
         display: flex;
@@ -635,6 +638,7 @@ header {
         justify-content: space-between;
         padding: 50px;
         width: 100%;
+        height: 669px;
         max-width: 453px;
         border: 1px solid rgba(66, 66, 66, 0.219);
         border-radius: 20px;
@@ -699,3 +703,81 @@ header {
     }
 }
 
+.contact__inner {
+    width: 100%;
+    max-width: 725px;
+    height: 612px;
+
+
+    .contact__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 109px;
+
+        .contact__place {
+            max-width: 313px;
+            height: 108px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            
+        }
+
+        .contact__phone {
+            max-width: 245px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+        }
+
+        .contact__mail {
+            max-width: 167px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contact__map {
+    width: 100%;
+    height: 100%;
+    max-width: 516px;
+    max-height: 343px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contact__social {
+
+    a {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
