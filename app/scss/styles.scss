@@ -53,9 +53,21 @@ header {
         padding-left: 19px;
 
         li {
-            font-size: 15px;
+            
             display: inline;
             padding: 10px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 15px;
+                transition: 800ms;
+
+                &:hover {
+                    font-size: 19px;
+                    transition: 800ms;
+                }
+            }
         }
     }
     
@@ -83,6 +95,19 @@ header {
                 height: 41px;
                 margin-left: 12px;
                 margin-right: 12px;
+ 
+            }
+
+            &:hover {
+
+                a {
+                    transition: 500ms;
+
+                    .navigation__hover {
+                        fill: #2091F9;
+                        transition: 500ms;
+                    }
+                }
             }
         }
     }
@@ -113,6 +138,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: #fff;
     font-size: 20px;
     margin-top: 100px;
     width: 263px;
@@ -122,6 +149,10 @@ header {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0 );
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.815);
+    }
 }
 
 .features {
@@ -216,6 +247,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: 700;
             font-size: 20px;
             width: 236px;
             height: 60px;
@@ -224,6 +256,10 @@ header {
             color: #fff;
             position: absolute;
             bottom: 10px;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.815);
+            }
         }
     }
 
@@ -277,6 +313,10 @@ header {
         width: 236px;
         height: 60px;
         border-radius: 50px;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.815);
+        }
     }
 }
 
@@ -317,10 +357,15 @@ header {
         font-size: 20px;
         background-color: #2091F9;
         color:#fff;
+        text-decoration: none;
         margin-top: 80px;
         width: 276px;
         height: 60px;
         border-radius: 50px;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.815);
+        }
     }
 }
 
@@ -454,6 +499,10 @@ header {
             border-radius: 50px;
             background-color: #2091F9;
             color: #fff;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.815);
+            }
         }
     }
 
@@ -523,6 +572,10 @@ header {
             border-radius: 50px;
             background-color: #ffffff;
             color: #2091F9;
+
+            &:hover {
+                color: #2090f9d8;
+            }
         }
 
 
@@ -595,6 +648,10 @@ header {
             border-radius: 50px;
             background-color: #2091F9;
             color: #fff;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.815);
+            }
         }
     }
 }
@@ -693,12 +750,18 @@ header {
         }
 
         button {
+            font-size: 20px;
             width: 145px;
             height: 56px;
             border-radius: 50px;
             color: #fff;
             background-color: #2091F9;
             border: none;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.815);
+            }
         }
     }
 }
@@ -779,5 +842,79 @@ header {
         height: auto;
         margin-left: 5px;
         margin-right: 5px;
+        
+        svg {
+            transition: 200ms;
+        }
+
+        &:hover {
+            svg {
+                width: 44px;
+                height: 44px;
+                transition: 200ms;
+            }
+        }
+
+    }
+}
+
+footer {
+    background-color: #252B42;
+    color: #fff;
+    
+    .footer__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer__adress {
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+            }
+        }
+
+        .footer__phone {
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+            }
+        }
+
+        .footer__social {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            font-size: 0px;
+
+            li {
+                padding-left: 10px;
+                padding-right: 10px;
+
+                &:hover {
+
+                    a {
+                        transition: 500ms;
+    
+                        .footer__hover {
+                            fill: #2091F9;
+                            transition: 500ms;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
