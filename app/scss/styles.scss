@@ -781,3 +781,52 @@ header {
         margin-right: 5px;
     }
 }
+
+footer {
+    background-color: #252B42;
+    color: #fff;
+    
+    .footer__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer__adress {
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+            }
+        }
+
+        .footer__phone {
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+            }
+        }
+
+        .footer__social {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            font-size: 0px;
+
+            li {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

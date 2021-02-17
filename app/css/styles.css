@@ -593,3 +593,37 @@ header {
   height: auto;
   margin-left: 5px;
   margin-right: 5px; }
+
+footer {
+  background-color: #252B42;
+  color: #fff; }
+  footer .footer__inner {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .footer__inner .footer__adress {
+      font-weight: 700;
+      font-size: 20px;
+      display: flex;
+      align-items: center; }
+      footer .footer__inner .footer__adress svg {
+        margin-right: 10px; }
+    footer .footer__inner .footer__phone {
+      font-weight: 700;
+      font-size: 20px;
+      display: flex;
+      align-items: center; }
+      footer .footer__inner .footer__phone svg {
+        margin-right: 10px; }
+    footer .footer__inner .footer__social {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      font-size: 0px; }
+      footer .footer__inner .footer__social li {
+        padding-left: 10px;
+        padding-right: 10px; }
