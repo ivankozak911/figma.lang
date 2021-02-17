@@ -9,8 +9,13 @@
 </head>
 <body>
     <header>
+        <button class="toggle__menu" id="toggle-menu">
+            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.66797 8H33.3346V10.6667H6.66797V8ZM13.3346 14.6667H33.3346V17.3333H13.3346V14.6667ZM21.668 21.3333H33.3346V24H21.668V21.3333Z" fill="white"/>
+            </svg>  
+        </button>
         <nav class="navigation">
-            <menu class="navigation__list">
+            <menu class="navigation__list" id="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Pricing</a></li>
@@ -125,7 +130,10 @@
                 Try For Free.
             </a>
         </div>
-        <img src="./img/laptop.png" class="fastest__latop" alt="photo laptop"  height="386">
+        <div class="fastest__inner">
+            <img src="./img/laptop.png" class="fastest__latop" alt="photo laptop" >
+        </div>
+        
     </section>
     <section class="partners">
         <h2 class="partners__title">
@@ -135,18 +143,21 @@
             Most calendars are designed for teams. 
             Slate is designed for freelancers
         </p>
-        <div class="partners__row">
-            <div><img class="partners__google" src="./img/google-partner.png" alt="img google"></div>
-            <div><img class="partners__amazon" src="./img/amazon-partner.png" alt="img amazon"></div>
-            <div><img class="partners__microsoft" src="./img/microsoft-partner.png" alt="img microsoft"></div>
-            <div><img class="partners__uber" src="img/uber-partner.png" alt="img uber"></div>
+        <div class="partners__inner">
+            <div class="partners__row">
+                <div class="partners__google"><img  src="./img/google-partner.png" alt="img google"></div>
+                <div class="partners__amazon"><img src="./img/amazon-partner.png" alt="img amazon"></div>
+                <div class="partners__microsoft"><img src="./img/microsoft-partner.png" alt="img microsoft"></div>
+                <div class="partners__uber"><img src="img/uber-partner.png" alt="img uber"></div>
+            </div>
+            <div class="partners__row">
+                <div class="partners__bropbox"><img src="./img/dropbox-partner.png" alt="img dropbox"></div>
+                <div class="partners__google-two"><img src="./img/google-partner.png" alt="img google"></div>
+                <div class="partners__uber-two"><img src="img/uber-partner.png" alt="img uber"></div>
+                <div class="partners__amazon-two"><img src="./img/amazon-partner.png" alt="img amazon"></div>
+            </div>
         </div>
-        <div class="partners__row">
-            <div><img class="partners__bropbox" src="./img/dropbox-partner.png" alt="img dropbox"></div>
-            <div><img class="partners__google-two" src="./img/google-partner.png" alt="img google"></div>
-            <div><img class="partners__uber-two" src="img/uber-partner.png" alt="img uber"></div>
-            <div><img class="partners__amazon-two" src="./img/amazon-partner.png" alt="img amazon"></div>
-        </div>
+        
         <a href="#" class="partners__try">Try For Free</a>
     </section>
     <section class="respond">
@@ -375,5 +386,7 @@
             </ul>
         </div>
     </footer>
+    <script src="js/jquery/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
