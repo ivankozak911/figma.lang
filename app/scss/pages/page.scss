@@ -18,17 +18,7 @@ header {
     background-size: cover;
     position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 206px;
-        height: 78px;
-        left: 26px;
-        background-image: url("../img/dark.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+    
 
 
 }
@@ -45,6 +35,7 @@ header {
     padding: 0px;
     right: 0px;
     position: absolute;
+    top: 32px;
     z-index: 500;
 }
 
@@ -922,30 +913,31 @@ footer {
             }
         }
 
-        .footer__social {
-            display: flex;
-            margin: 0px;
-            padding: 0px;
-            list-style-type: none;
-            font-size: 0px;
+        
+    }
+}
 
-            li {
-                padding-left: 10px;
-                padding-right: 10px;
+.footer__social {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 0px;
 
-                &:hover {
+    li {
+        padding-left: 10px;
+        padding-right: 10px;
 
-                    a {
-                        transition: 500ms;
-    
-                        .footer__hover {
-                            fill: #2091F9;
-                            transition: 500ms;
-                        }
-                    }
+        &:hover {
+
+            a {
+                transition: 500ms;
+
+                .footer__hover {
+                    fill: #2091F9;
+                    transition: 500ms;
                 }
             }
         }
     }
 }
-
