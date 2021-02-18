@@ -300,6 +300,11 @@
 
     .pricing {
         padding-bottom: 0px;
+
+        .pricing__subtitle {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 
     .pricing__list {
@@ -323,6 +328,11 @@
     .contact {
         height: auto;
 
+        .contact__subtitle {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
 
         .contact__cover {
             flex-direction: column-reverse;
@@ -335,6 +345,7 @@
             .contact__inner {
                 display: flex;
                 flex-direction: column-reverse;
+                padding-left: 0px;
 
                 .contact__social {
                     display: flex;

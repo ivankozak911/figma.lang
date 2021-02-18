@@ -11,6 +11,9 @@
 * {
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'PT Sans Narrow';
   font-weight: 400;
@@ -870,6 +873,9 @@ footer {
     padding-right: 15px; }
   .pricing {
     padding-bottom: 0px; }
+    .pricing .pricing__subtitle {
+      padding-left: 15px;
+      padding-right: 15px; }
   .pricing__list {
     flex-direction: column;
     padding-left: 15px;
@@ -885,6 +891,9 @@ footer {
       height: 607px; }
   .contact {
     height: auto; }
+    .contact .contact__subtitle {
+      padding-left: 15px;
+      padding-right: 15px; }
     .contact .contact__cover {
       flex-direction: column-reverse;
       height: auto; }
@@ -892,7 +901,8 @@ footer {
         width: 100%; }
       .contact .contact__cover .contact__inner {
         display: flex;
-        flex-direction: column-reverse; }
+        flex-direction: column-reverse;
+        padding-left: 0px; }
         .contact .contact__cover .contact__inner .contact__social {
           display: flex;
           justify-content: center; }
