@@ -1,6 +1,3 @@
-h1 {
-  color: white; }
-
 @font-face {
   font-family: 'PT Sans Narrow';
   font-weight: 700;
@@ -26,7 +23,23 @@ header {
   background-image: url("../img/Rectangle 9.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+
+.toggle__menu {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 5em;
+  padding: 0px;
+  right: 0px;
+  position: absolute;
+  top: 32px;
+  z-index: 500; }
 
 .navigation {
   display: flex;
@@ -134,7 +147,8 @@ header {
   display: flex;
   justify-content: space-between;
   max-width: 869px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 80px; }
   .aside-list .aside-list__section {
     margin-left: 10px;
     margin-right: 10px; }
@@ -163,12 +177,14 @@ header {
   max-width: 1243px;
   justify-content: center;
   margin: 0 auto;
+  height: 500px;
   padding-top: 100px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  overflow: hidden;
+  position: relative; }
   .fastest .fastest__left {
-    max-width: 400px;
-    height: auto;
-    position: relative; }
+    width: 400px;
+    height: 50%; }
     .fastest .fastest__left .fastest__title {
       font-size: 48px;
       line-height: 55px;
@@ -194,6 +210,12 @@ header {
       bottom: 10px; }
       .fastest .fastest__left .fastest__link:hover {
         color: rgba(255, 255, 255, 0.815); }
+  .fastest .fastest__inner {
+    width: 50%; }
+    .fastest .fastest__inner .fastest__latop {
+      object-fit: contain;
+      width: 100%;
+      height: 100%; }
 
 .partners {
   padding-top: 50px;
@@ -265,6 +287,7 @@ header {
     font-size: 20px;
     background-color: #2091F9;
     color: #fff;
+    text-decoration: none;
     margin-top: 80px;
     width: 276px;
     height: 60px;
@@ -481,7 +504,7 @@ header {
       font-size: 20px;
       text-decoration: none;
       bottom: 40px;
-      width: 255px;
+      width: 76.119%;
       height: 56px;
       border-radius: 50px;
       background-color: #2091F9;
@@ -519,7 +542,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding: 50px;
-    width: 100%;
+    width: 60%;
     height: 669px;
     max-width: 453px;
     border: 1px solid rgba(66, 66, 66, 0.219);
@@ -657,17 +680,253 @@ footer {
       align-items: center; }
       footer .footer__inner .footer__phone svg {
         margin-right: 10px; }
-    footer .footer__inner .footer__social {
+
+.footer__social {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  font-size: 0px; }
+  .footer__social li {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .footer__social li:hover a {
+      transition: 500ms; }
+      .footer__social li:hover a .footer__hover {
+        fill: #2091F9;
+        transition: 500ms; }
+
+@media screen and (max-width: 1250px) {
+  .contact__cover {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 1100px) {
+  .contact__inner {
+    padding-left: 15px; }
+  .fastest__left {
+    padding-left: 15px; }
+  .pricing__list {
+    justify-content: space-around; }
+  .contact__cover .contact__form {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .contact__place {
+    width: 33%; } }
+
+@media screen and (max-width: 790px) {
+  .navigation {
+    background-image: none; }
+  .contact__inner .contact__row {
+    height: 150px; }
+    .contact__inner .contact__row .contact__place {
+      height: 100%; }
+  .contact__inner .contact__map {
+    height: 300px; } }
+
+@media screen and (max-width: 700px) {
+  .features {
+    padding-top: 80px;
+    padding-bottom: 8px; }
+  .aside-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px; }
+    .aside-list .aside-list__section {
+      margin-top: 32px;
+      margin-bottom: 32px; }
+  .fastest {
+    padding-top: 50px;
+    height: auto; }
+    .fastest .fastest__left {
+      height: 357px;
+      position: relative; }
+      .fastest .fastest__left .fastest__link {
+        position: absolute; }
+  .partners__inner {
+    display: flex; }
+    .partners__inner .partners__row {
+      flex-direction: column; }
+  .contact__inner {
+    height: 100%; }
+    .contact__inner .contact__row {
+      height: auto;
       display: flex;
-      margin: 0px;
-      padding: 0px;
-      list-style-type: none;
-      font-size: 0px; }
-      footer .footer__inner .footer__social li {
-        padding-left: 10px;
-        padding-right: 10px; }
-        footer .footer__inner .footer__social li:hover a {
-          transition: 500ms; }
-          footer .footer__inner .footer__social li:hover a .footer__hover {
-            fill: #2091F9;
-            transition: 500ms; }
+      flex-direction: column;
+      justify-content: space-around; }
+      .contact__inner .contact__row .contact__place {
+        width: 100%; }
+    .contact__inner .contact__map {
+      height: 200px; }
+  .footer__inner .footer__adress span {
+    font-weight: 400;
+    font-size: 15px; }
+  .footer__inner .footer__phone span {
+    font-weight: 400;
+    font-size: 15px; } }
+
+@media screen and (max-width: 575px) {
+  header {
+    position: relative;
+    height: 750px;
+    background-image: url("../img/header-backgraund-mobile.png"); }
+    header::before {
+      content: "";
+      position: absolute;
+      width: 206px;
+      height: 78px;
+      top: 18px;
+      left: 26px;
+      background-image: url("../img/dark.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    header .header__slogan {
+      margin-top: 192px;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 55px;
+      padding-left: 20px;
+      padding-right: 20px; }
+    header .header__subtitle {
+      font-size: 28px;
+      font-weight: 400;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 30px;
+      line-height: 40px; }
+    header .header__subscribe {
+      margin-top: 70px;
+      width: 236px;
+      height: 52px; }
+  .toggle__menu {
+    display: flex; }
+  .navigation {
+    flex-direction: column;
+    background-color: #303950;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 300; }
+    .navigation .navigation__list {
+      display: none;
+      flex-direction: column;
+      font-size: 40px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 0px; }
+      .navigation .navigation__list li {
+        display: block;
+        width: 100%;
+        padding: 0px; }
+        .navigation .navigation__list li a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          height: 50px;
+          margin: 3px; }
+          .navigation .navigation__list li a:hover {
+            font-size: 20px;
+            transition: 0ms; }
+    .navigation .navigation__list-active {
+      display: flex; }
+    .navigation .navigation__social {
+      display: none; }
+  .features__subtitle {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .fastest {
+    flex-direction: column; }
+    .fastest .fastest__left {
+      width: 100%;
+      padding-right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .fastest .fastest__left .fastest__title {
+        text-align: center;
+        font-weight: 400; }
+      .fastest .fastest__left .fastest__subtitle {
+        width: 80%;
+        text-align: center; }
+      .fastest .fastest__left .fastest__link {
+        bottom: 0px; }
+    .fastest .fastest__inner {
+      width: 100%;
+      margin-top: 50px;
+      padding-left: 13px;
+      padding-right: 13px; }
+  .partners .partners__subtitle {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .partners .partners__inner {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .partners .partners__inner .partners__row:nth-child(2) {
+      display: none; }
+  .respond .respond__subtitle {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .pricing {
+    padding-bottom: 0px; }
+  .pricing__list {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 75px; }
+    .pricing__list .free,
+    .pricing__list .standart,
+    .pricing__list .business {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      width: 100%;
+      max-width: 335px;
+      height: 607px; }
+  .contact {
+    height: auto; }
+    .contact .contact__cover {
+      flex-direction: column-reverse;
+      height: auto; }
+      .contact .contact__cover .contact__form {
+        width: 100%; }
+      .contact .contact__cover .contact__inner {
+        display: flex;
+        flex-direction: column-reverse; }
+        .contact .contact__cover .contact__inner .contact__social {
+          display: flex;
+          justify-content: center; }
+          .contact .contact__cover .contact__inner .contact__social a {
+            margin-left: 12px;
+            margin-right: 12px; }
+      .contact .contact__cover .contact__row {
+        height: auto;
+        align-items: flex-start;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 45px; }
+        .contact .contact__cover .contact__row .contact__place,
+        .contact .contact__cover .contact__row .contact__phone,
+        .contact .contact__cover .contact__row .contact__mail {
+          padding: 0px;
+          display: flex;
+          flex-direction: row;
+          max-width: 300px;
+          position: relative; }
+          .contact .contact__cover .contact__row .contact__place p,
+          .contact .contact__cover .contact__row .contact__phone p,
+          .contact .contact__cover .contact__row .contact__mail p {
+            text-align: start;
+            margin-top: 8px;
+            margin-bottom: 8px; }
+          .contact .contact__cover .contact__row .contact__place svg,
+          .contact .contact__cover .contact__row .contact__phone svg,
+          .contact .contact__cover .contact__row .contact__mail svg {
+            position: absolute;
+            left: -35px; }
+  .contact__map {
+    display: none; }
+  .footer__inner {
+    flex-direction: column;
+    height: 100% !important;
+    padding-bottom: 30px; } }

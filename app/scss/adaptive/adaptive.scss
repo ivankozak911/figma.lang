@@ -1,0 +1,395 @@
+@media screen and (max-width: 1250px) {
+    .contact__cover {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .contact__inner {
+        padding-left: 15px;
+    }
+
+    .fastest__left {
+        padding-left:15px;
+    }
+
+    .pricing__list {
+        justify-content: space-around;
+    }
+
+    .contact__cover {
+        .contact__form {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    
+    .contact__place {
+        width: 33%;
+    }
+    
+}
+
+@media screen and (max-width: 790px) {
+    .navigation {
+        background-image: none;
+    }
+
+    .contact__inner {
+        .contact__row {
+            height: 150px;
+
+            .contact__place {
+                height: 100%;
+            }
+        }
+
+        .contact__map {
+            height: 300px;
+        }
+    }
+
+    
+
+}
+
+@media screen and (max-width: 700px) {
+    .features {
+        padding-top: 80px;
+        padding-bottom: 8px;
+    }
+
+
+    .aside-list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+
+        .aside-list__section {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .fastest {
+        padding-top: 50px;
+        height: auto;
+        
+
+        .fastest__left {
+            height: 357px;
+            position: relative;
+
+            .fastest__link {
+                position: absolute;
+            }
+        }
+    }
+
+    .partners__inner {
+        display: flex;
+
+        .partners__row {
+            flex-direction: column;
+        }
+    }
+
+    .contact__inner {
+        height: 100%;
+        .contact__row {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .contact__place {
+                width: 100%;
+            }
+        }
+
+        .contact__map {
+            height: 200px;
+        }
+    }
+
+
+    .footer__inner {
+        .footer__adress {
+            
+            span {
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+
+        .footer__phone {
+
+            span {
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+
+    header {
+        position: relative;
+        height: 750px;
+        background-image: url("../img/header-backgraund-mobile.png");
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 206px;
+            height: 78px;
+            top: 18px;
+            left: 26px;
+            background-image: url("../img/dark.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .header__slogan {
+            margin-top: 192px;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 55px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    
+        .header__subtitle {
+            font-size: 28px;
+            font-weight: 400;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 30px;
+            line-height: 40px;
+        }
+    
+        .header__subscribe{
+            margin-top: 70px;
+            width: 236px;
+            height: 52px;
+        }
+
+        
+    }
+
+    .toggle__menu {
+        display: flex;
+    }
+
+    .navigation {
+        flex-direction: column;
+        background-color: rgb(48, 57, 80);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 300;
+
+        .navigation__list{
+            display: none;          // вирубив
+            flex-direction: column;
+            font-size: 40px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-left: 0px;
+
+            li {
+                display: block;
+                width: 100%;
+                padding: 0px;
+                a {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    height: 50px;
+                    margin: 3px;
+
+                    &:hover {
+                        font-size: 20px;
+                        transition: 0ms;
+                    }
+                }
+                
+            }
+        }
+
+        .navigation__list-active {
+            display: flex;
+        }
+        
+        .navigation__social {
+            display: none;
+        }
+    }
+
+    .features__subtitle {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .fastest {
+        flex-direction: column;
+
+
+
+        .fastest__left {
+            width: 100%;
+            padding-right: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .fastest__title {
+                text-align: center;
+                font-weight: 400;
+            }
+
+            .fastest__subtitle {
+                width: 80%;
+                text-align: center;
+            }
+
+            .fastest__link {
+                bottom: 0px;
+            }
+        }
+
+        .fastest__inner {
+            width: 100%;
+            margin-top: 50px;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+    }
+
+    .partners {
+
+        .partners__subtitle {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .partners__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .partners__row:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .respond {
+
+        .respond__subtitle {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .pricing {
+        padding-bottom: 0px;
+    }
+
+    .pricing__list {
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 75px;
+
+        .free, 
+        .standart, 
+        .business {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: 100%;
+            max-width: 335px;
+            height: 607px;
+        }
+    }
+
+
+    .contact {
+        height: auto;
+
+
+        .contact__cover {
+            flex-direction: column-reverse;
+            height: auto;
+
+            .contact__form {
+                width: 100%;
+            }
+
+            .contact__inner {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .contact__social {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        margin-left: 12px;
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            .contact__row {
+                height: auto;
+                align-items: flex-start;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                padding-left: 45px;
+
+                .contact__place,
+                .contact__phone,
+                .contact__mail {
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: row;
+                    max-width: 300px;
+                    position: relative;
+                    
+                    p {
+                        text-align: start;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                    }
+
+                    svg{
+                        position: absolute;
+                        left: -35px;
+                    }
+                }
+            }
+        }   
+    }
+
+    
+
+    .contact__map {
+        display: none;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        height: 100% !important;
+        padding-bottom: 30px;
+    }
+
+}
+
+
