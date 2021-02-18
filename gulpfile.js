@@ -28,7 +28,19 @@ function cssmin () {
     .pipe(gulp.dest("./app/css"))
 }
 
+function build () {
+    return gulp.src([
+        "./app/css/styles.min.css",
+        "./app/fonts/*",
+        "./app/img/**/*",
+        "./app/js/**/*.js",
+        "./app/*.html"
+    ], {base:"app"})
+    .pipe(gulp.dest("dist"))
+}
+
 exports.compiller   = compiller; 
 exports.watch       = watch;        // компиляция scss в css
 exports.imagemin    = imagemin;     // минимизацыя изображения
-exports.cssmin      = cssmin;       // минимизацыя css 
+exports.cssmin      = cssmin;       // минимизацыя css
+exports.build       = gulp.series(compiller, cssmin, imagemin, build) ; 
